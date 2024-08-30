@@ -1,17 +1,4 @@
-/***************************************************************************************
 
-	Lattice Semiconductor Corp.
-	Embedded Data File.
-
-	CREATED BY: Diamond Deployment Tool 3.12
-	CREATION DATE: Fri Aug 09 18:34:00 2024
-
-	CHAIN DESCRIPTION:
-	1	iCE40UL1K	Fast Program	C:/Users/PC/Downloads/ice40UL/spi_gpio_top_bitmap.bin
-
-	The following constant variables should be stored in external data.
-
-***************************************************************************************/
 #include "fastconfig_data.h"
 const int g_iDataSize = 104160;
 unsigned char g_pucDataArray[ 104160 ] = {
