@@ -143,7 +143,7 @@ int rbpi_tx(unsigned char *buf, int bytes)
 void chunk_array( unsigned char chunkedarray[][chunk_size]) {
     for (int i = 0; i <		 num_chunks; i++) {
         int chunk_start = i * chunk_size;
-        int chunk_end = (i == num_chunks - 1) ? g_iDataSize : chunk_start + chunk_size;
+        int chunk_end = chunk_start + chunk_size;
         int current_chunk_size = chunk_end - chunk_start;
 	
             for (int j = 0; j < current_chunk_size; j++) {

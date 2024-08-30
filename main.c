@@ -61,7 +61,7 @@ int main() {
 	
 	for(int l=0;l<149;l++){
 		
-		rbpi_tx(write_buf,1);//send 0xFF after CDONE goes high.
+		rbpi_tx(write_buf,1);//send 0xFF after CDONE goes high and CS is high.
 		
 		
 	}	
