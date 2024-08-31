@@ -24,9 +24,10 @@ You can modify g_iDataSize and g_pucDataArray with your bitstream information. W
 
 ![image](https://github.com/user-attachments/assets/3fc5a287-e801-4b68-9822-ac081261dd96)
 
-Main.c follows the instructions from FPGA-TN-02001-3.4. This is very similar with the ice40UL example except that we add an additional step to divide the bitstream into chunks.
+Main.c follows the instructions from FPGA-TN-02001-3.4. This is very similar with the ice40UL example except that we send the bitstream by chunk instead of sending it all at once.
 
-![image](https://github.com/user-attachments/assets/157006b0-ab0a-4097-a8b1-1861cf04c5a9)
+![image](https://github.com/user-attachments/assets/e64cff9e-fbe7-4d27-a933-3c2b671136da)
+
 
 See sample waveform transaction below:
 ![image](https://github.com/user-attachments/assets/073d1997-4830-43d6-942f-cdb6db1aa78d)
