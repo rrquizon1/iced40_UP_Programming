@@ -24,7 +24,7 @@ struct gpiod_line *cs;
 
 int main() {
 	unsigned char write_buf[1] = { 0xFF };
-	unsigned char chunkedArray[num_chunks][chunk_size]; // Chunked bitstream
+	
 	
 	
 	spi_init(3000,&crst,&cs);
@@ -41,18 +41,10 @@ int main() {
 	gpiod_line_set_value(cs, 0);
 	
 	
-	chunk_array(chunkedArray); //Divide bitstream into chunks 
-	
-	//for (int i = 0; i <num_chunks; i++) { // optional prininting of chunks
-      //  printf("Chunk %d: ", i);
-       // printChunk(chunkedArray[i], chunk_size);
-	//}
-
-	
 	usleep(1);
 	
 	for(int k=0;k<num_chunks;k++){
-	rbpi_tx(chunkedArray[k],chunk_size);//Send bitstream by chunks.
+	rbpi_tx(&g_pucDataArray[k*chunk_size],chunk_size);//Send bitstream by chunks.
 	}
 	
 	
