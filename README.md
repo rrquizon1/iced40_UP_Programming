@@ -32,7 +32,7 @@ Main.c follows the instructions from FPGA-TN-02001-3.4. This is very similar wit
 See sample waveform transaction below:
 ![image](https://github.com/user-attachments/assets/073d1997-4830-43d6-942f-cdb6db1aa78d)
 
-Aside from, dividing the bitstream by chunks, I would like to emphasize the need for additional clock cycles after CDONE goes high. If CDONE,goes high and no extra clock cyclers are sent, IO settings in the bitstream will not activate.
+Aside from, sending the bitstream by chunks, I would like to emphasize the need for additional clock cycles after CDONE goes high. If CDONE,goes high and no extra clock cyclers are sent, IO settings in the bitstream will not activate.
 This is stated clearly at chapter 13.2 of FPGA-TN-02001-3.4.
 ![image](https://github.com/user-attachments/assets/44497b46-5932-4022-99e2-b4b5c612d482)
 
