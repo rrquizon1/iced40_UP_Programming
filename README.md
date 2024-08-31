@@ -1,4 +1,4 @@
-This is an SSPI CRAM programming implementation of ice40 UltraPlus using Raspberry pi 5.
+This is an SSPI CRAM programming implementation of ice40 UltraPlus breakout board using Raspberry pi 5.
 
 This example uses lgpiod library for manual control of CS and CRESET so makesure to install it: sudo apt-get install gpiod libgpiod-dev
 
