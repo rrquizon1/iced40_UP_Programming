@@ -21,6 +21,7 @@ ice40_spi.c- contains the functions used for SPI transaction and gpio control
 Makefile-compiles the project
 
 You can modify g_iDataSize and g_pucDataArray with your bitstream information. With this example, ice40 UP 5k breakout board is used which has around 100k of data. This is beyond the buffer size limit that's why we need to send data by chunks. 
+
 ![image](https://github.com/user-attachments/assets/3fc5a287-e801-4b68-9822-ac081261dd96)
 
 Main.c follows the instructions from FPGA-TN-02001-3.4. This is very similar with the ice40UL example except that we add an additional step to divide the bitstream into chunks.
